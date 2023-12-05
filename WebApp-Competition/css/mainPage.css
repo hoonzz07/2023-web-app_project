@@ -154,6 +154,7 @@ header {
     background-color: inherit;
     overflow: scroll;
     width: 80%;
+    font-size: 20px;
 }
 
 /* 캘린더 날짜는 나중에 시간 되면 자바스크립트로 오늘 날짜 가져올 예정 */
@@ -167,7 +168,7 @@ header {
     padding-left: 20px;
 }
 
-.calendar > i {
+.calendar > a > i {
     color: gray;
     scale: 150%;
 }
