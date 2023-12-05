@@ -7,6 +7,7 @@
     list-style: none;
 }
 
+/* 초기 레이아웃 잡기 */
 .layout {
     width: 100%;
     height: 100vh;
@@ -21,6 +22,7 @@ header {
     /* border: 1px solid black; */
 }
 
+/* 헤더 안에 있는 요소들 플렉스 주기 */
 .header_flex {
     display: flex;
     flex-direction: column;
@@ -30,6 +32,7 @@ header {
     height: 100%;
 }
 
+/* 로고 컨테이너 및 로고 */
 .logo {
     align-items: center;
     display: flex;
@@ -41,6 +44,7 @@ header {
     width: 100px;
 }
 
+/* 네비게이션 바 */
 .gnb {
     width: 85%;
     height: 25%;
@@ -69,6 +73,7 @@ header {
     margin-left: 40px;
 }
 
+/* 클릭 시 백그라운드 파란색 위치잡기 */
 .nav {
     /* margin-right: 50px; */
     display: flex;
@@ -79,6 +84,7 @@ header {
     left: -53px;
 }
 
+/* 선택한 글자 말고 왼쪽에 작은 파란색 상자 보이게 하는거 */
 .leftbar{
     width: 20%;
     height: 100%;
@@ -95,13 +101,113 @@ header {
     color: white;
 }
 
+.section > .leftbar {
+    display: none;
+}
+
+/* 여기서부터 컨텐츠 (오른쪽) */
 .contents {
     width: calc(100% - 275px);
     height: 100vh;
-    background-color: yellow;
+    /* background-color: yellow; */
     padding: 50px;
 }
 
-.section > .leftbar {
-    display: none;
+/* 콘텐츠 레이아웃 잡기 */
+.contents_layout {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.topline {
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.search {
+    height: 100%;
+    width: 50%;
+    background-color: rgb(226, 226, 226);
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    padding-left: 15px;
+}
+
+.search > i {
+    scale: 150%;
+    color: gray;
+}
+
+/* 검색 input */
+.searchtogo {
+    margin-left: 30px;
+    border: none;
+    padding: 10px;
+    background-color: inherit;
+    overflow: scroll;
+    width: 80%;
+}
+
+/* 캘린더 날짜는 나중에 시간 되면 자바스크립트로 오늘 날짜 가져올 예정 */
+.calendar {
+    height: 100%;
+    width: 25%;
+    background-color: rgb(226, 226, 226);
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    padding-left: 20px;
+}
+
+.calendar > i {
+    color: gray;
+    scale: 150%;
+}
+
+.info {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.info > i  {
+    color: gray;
+    scale: 150%;
+}
+
+.more {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    align-items: center;
+}
+
+.more > i {
+    color: gray;
+    scale: 150%;
+}
+
+.profilebox {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(226, 226, 226);
+    /* border: 1px solid black; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.profilebox > i {
+    scale: 150%;
+    color: gray;
 }

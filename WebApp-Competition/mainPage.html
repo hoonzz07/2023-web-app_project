@@ -9,11 +9,14 @@
 </head>
 <body>
     <div class="layout">
+        <!-- 여기서부터 헤더, 네비게이션 바 (왼쪽 사이드) -->
         <header>
             <div class="header_flex">
+                <!-- 로고 -->
                 <div class="logo">
                     <a href="mainPage.html"><img src="logo.png" class="foundit"></a>
                 </div>
+                <!-- 네비게이션 -->
                 <nav class="gnb">
                     <div class="nav">
                         <div class="leftbar"></div>
@@ -57,8 +60,31 @@
                 </div> -->
             </div>
         </header>
+        <!-- 여기서부터 컨텐츠 (오른쪽) -->
         <div class="contents">
-            <div class="contents_layout"></div>
+            <div class="contents_layout">
+                <div class="topline">
+                    <!-- 검색창 -->
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" class="searchtogo" placeholder="검색">
+                    </div>
+                    <!-- 날짜 -->
+                    <div class="calendar">
+                        <i class="fa-regular fa-calendar"></i>
+                    </div>
+                    <!-- 프로필 및 알림 -->
+                    <div class="info">
+                        <i class="fa-solid fa-bell"></i>
+                        <div class="more">
+                            <div class="profilebox">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="mainPage.js"></script>
