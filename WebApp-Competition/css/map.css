@@ -7,6 +7,7 @@
     list-style: none;
 }
 
+/* 초기 레이아웃 잡기 */
 .layout {
     width: 100%;
     height: 100vh;
@@ -21,6 +22,7 @@ header {
     /* border: 1px solid black; */
 }
 
+/* 헤더 안에 있는 요소들 플렉스 주기 */
 .header_flex {
     display: flex;
     flex-direction: column;
@@ -30,6 +32,7 @@ header {
     height: 100%;
 }
 
+/* 로고 컨테이너 및 로고 */
 .logo {
     align-items: center;
     display: flex;
@@ -41,6 +44,7 @@ header {
     width: 100px;
 }
 
+/* 네비게이션 바 */
 .gnb {
     width: 85%;
     height: 25%;
@@ -69,6 +73,7 @@ header {
     margin-left: 40px;
 }
 
+/* 클릭 시 백그라운드 파란색 위치잡기 */
 .nav {
     /* margin-right: 50px; */
     display: flex;
@@ -79,6 +84,7 @@ header {
     left: -53px;
 }
 
+/* 선택한 글자 말고 왼쪽에 작은 파란색 상자 보이게 하는거 */
 .leftbar{
     width: 20%;
     height: 100%;
@@ -95,16 +101,10 @@ header {
     color: white;
 }
 
-.contents {
-    width: calc(100% - 275px);
-    height: 100vh;
-    background-color: yellow;
-    padding: 50px;
-}
-
 .section > .leftbar {
     display: none;
 }
+
 /* 여기서부터 컨텐츠 (오른쪽) */
 .contents {
     width: calc(100% - 275px);
