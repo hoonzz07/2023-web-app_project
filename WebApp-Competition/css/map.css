@@ -121,10 +121,11 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 .topline {
-    width: 100%;
+    width: 90%;
     height: 50px;
     /* border: 1px solid black; */
     display: flex;
@@ -183,6 +184,7 @@ header {
 .info > a > i  {
     color: gray;
     scale: 150%;
+    padding: 5px;
 }
 
 .more {
