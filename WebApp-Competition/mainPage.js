@@ -6,11 +6,12 @@
 
 // btn.onclick = btnClickHandler
 
-const whatisdate = () => {
+const WhatIsDate = () => {
     let today = new Date();
 
     let year = today.getFullYear();
     let month = today.getMonth();
+    month = month + 1;
     let date = today.getDate();
     let hours = today.getHours();
     
@@ -20,4 +21,8 @@ const whatisdate = () => {
     
     // console.log(year + "-" + month + "-" + date);
 }
-whatisdate();
+WhatIsDate();
+
+const YouNeedLogin = () => {
+    alert("로그인이 필요합니다.");
+}
