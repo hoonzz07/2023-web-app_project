@@ -251,7 +251,6 @@ header {
   width: 100%;
   height: 100%;
   display: flex;
-  background-color: white;
 }
 
 .slide > div > a {
@@ -310,4 +309,76 @@ header {
   100% {
     transform: translateX(-100%);
   }
+}
+
+/* 오늘 찾은 물건들 */
+.todaysfounded {
+  width: 90%;
+  height: 37%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 20px 20px;
+  background-color: rgb(226, 226, 226);
+}
+
+.itemcontainer {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todaysitem {
+  /* border: 1px solid black; */
+  /* background-color: yellow; */
+  width: 20%;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.todaysitem:hover {
+  background-color: rgb(99, 146, 233);
+  scale: 110%;
+}
+
+.todaysitem:hover > a > div > .objsubti {
+  color: white;
+}
+
+.todaysitem > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.todaysitem > a > img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.objexp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 20%;
+}
+
+.objname {
+  font-size: 16px;
+}
+
+.objsubti {
+  color: gray;
+  font-size: 14px;
 }
