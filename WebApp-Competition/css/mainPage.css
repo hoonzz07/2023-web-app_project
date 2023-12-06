@@ -12,12 +12,8 @@
   width: 100%;
   height: 100vh;
   display: flex;
-<<<<<<< Updated upstream
-  /* overflow: hidden; */
-=======
-  overflow: hidden;
->>>>>>> Stashed changes
 }
+
 header {
   width: 275px;
   height: 100%;
@@ -120,8 +116,6 @@ header {
 .contents_layout {
   width: 100%;
   height: 100%;
-<<<<<<< Updated upstream
-  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -130,16 +124,6 @@ header {
 
 .topline {
   width: 90%;
-=======
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.topline {
-  width: 100%;
->>>>>>> Stashed changes
   height: 50px;
   /* border: 1px solid black; */
   display: flex;
@@ -194,11 +178,14 @@ header {
   justify-content: space-around;
 }
 
-<<<<<<< Updated upstream
+
 .info > a > i {
-=======
+  /* border: 1px solid black; */
+  color: gray;
+  scale: 150%;
+}
+
 .info > i {
->>>>>>> Stashed changes
   color: gray;
   scale: 150%;
 }
@@ -208,15 +195,6 @@ header {
   justify-content: space-evenly;
   width: 50%;
   align-items: center;
-}
-
-<<<<<<< Updated upstream
-.more > a > i {
-=======
-.more > i {
->>>>>>> Stashed changes
-  color: gray;
-  scale: 150%;
 }
 
 /* 프로필 */
@@ -236,7 +214,6 @@ header {
   color: gray;
 }
 
-<<<<<<< Updated upstream
 /* 오늘 날짜/시간 */
 .todaysdate {
   height: 80%;
@@ -323,10 +300,4 @@ header {
   100% {
     transform: translateX(-100%);
   }
-=======
-.lost_item {
-  width: 300px;
-  height: 300px;
-  background-color: black;
->>>>>>> Stashed changes
 }
