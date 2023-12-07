@@ -54,11 +54,11 @@ header {
   flex-direction: column;
 }
 
-.nav > a {
+.nav>a {
   width: 70%;
 }
 
-.gnb > .nav > a > div {
+.gnb>.nav>a>div {
   width: 100%;
   height: 50px;
   display: flex;
@@ -68,7 +68,7 @@ header {
   /* border: 1px solid black; */
 }
 
-.gnb > .nav > a > div > i {
+.gnb>.nav>a>div>i {
   /* scale: 120%; */
   margin-left: 40px;
 }
@@ -101,7 +101,7 @@ header {
   color: white;
 }
 
-.section > .leftbar {
+.section>.leftbar {
   display: none;
 }
 
@@ -142,7 +142,7 @@ header {
   padding-left: 15px;
 }
 
-.search > i {
+.search>i {
   scale: 150%;
   color: gray;
 }
@@ -169,7 +169,7 @@ header {
   padding-left: 20px;
 }
 
-.calendar > a > i {
+.calendar>a>i {
   color: gray;
   scale: 150%;
 }
@@ -181,7 +181,7 @@ header {
   justify-content: space-around;
 }
 
-.info > a > i {
+.info>a>i {
   color: gray;
   scale: 150%;
   padding: 5px;
@@ -194,7 +194,7 @@ header {
   align-items: center;
 }
 
-.more > a > i {
+.more>a>i {
   color: gray;
   scale: 150%;
 }
@@ -210,7 +210,7 @@ header {
   justify-content: center;
 }
 
-.profilebox > i {
+.profilebox>i {
   scale: 150%;
   color: gray;
 }
@@ -228,4 +228,11 @@ header {
   border: 1px solid black;
   width: 80%;
   height: 85%;
+}
+
+#map {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 100%;
 }
