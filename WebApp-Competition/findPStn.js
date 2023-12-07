@@ -11,6 +11,7 @@ const whatisdate = () => {
 
   let year = today.getFullYear();
   let month = today.getMonth();
+  month = month + 1;
   let date = today.getDate();
   let hours = today.getHours();
 
@@ -23,7 +24,13 @@ const whatisdate = () => {
   // console.log(year + "-" + month + "-" + date);
 };
 whatisdate();
+<<<<<<< Updated upstream
 
 const YouNeedLogin = () => {
   alert("로그인이 필요합니다.");
 }
+=======
+// find 부분
+const lost_item_value = document.querySelector(".lost_item_value");
+console.log(lost_item_value);
+>>>>>>> Stashed changes
