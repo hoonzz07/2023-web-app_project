@@ -11,14 +11,15 @@ const whatisdate = () => {
 
   let year = today.getFullYear();
   let month = today.getMonth();
+  month = month + 1;
   let date = today.getDate();
   let hours = today.getHours();
 
-  month = month + 1;
+  // month = month + 1;
 
   // document.write(year + "-" + month + "-" + date)
   let showToday = document.querySelector(".todaysdate");
-  showToday.textContent = `${year}-${month}-${date} ${hours}시`;
+  showToday.textContent = `${year}-${month}-${date}`;
 
   // console.log(year + "-" + month + "-" + date);
 };

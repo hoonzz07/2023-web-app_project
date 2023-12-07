@@ -6,7 +6,7 @@
 
 // btn.onclick = btnClickHandler
 
-const WhatIsDate = () => {
+const dateHandler = () => {
     let today = new Date();
 
     let year = today.getFullYear();
@@ -17,12 +17,12 @@ const WhatIsDate = () => {
     
     // document.write(year + "-" + month + "-" + date)
     let showToday = document.querySelector('.todaysdate');
-    showToday.textContent = `${year}-${month}-${date} ${hours}시`;
+    showToday.textContent = `${year}-${month}-${date}`;
     
     // console.log(year + "-" + month + "-" + date);
 }
-WhatIsDate();
+dateHandler();
 
-const YouNeedLogin = () => {
+const reqLoginHandler = () => {
     alert("로그인이 필요합니다.");
 }
