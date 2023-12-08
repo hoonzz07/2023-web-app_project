@@ -18,7 +18,7 @@ const whatisdate = () => {
 
   // document.write(year + "-" + month + "-" + date)
   let showToday = document.querySelector(".todaysdate");
-  showToday.textContent = `${year}-${month}-${date} ${hours}시`;
+  showToday.textContent = `${year}-${month}-${date}`;
 
   // console.log(year + "-" + month + "-" + date);
 };
