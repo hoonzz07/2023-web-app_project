@@ -13,9 +13,13 @@ const whatisdate = () => {
   let month = today.getMonth();
   month = month + 1;
   let date = today.getDate();
+<<<<<<< Updated upstream
   let hours = today.getHours();
 
   // month = month + 1;
+=======
+  // let hours = today.getHours();
+>>>>>>> Stashed changes
 
   // document.write(year + "-" + month + "-" + date)
   let showToday = document.querySelector(".todaysdate");
@@ -24,7 +28,20 @@ const whatisdate = () => {
   // console.log(year + "-" + month + "-" + date);
 };
 whatisdate();
+<<<<<<< Updated upstream
 
 const YouNeedLogin = () => {
   alert("로그인이 필요합니다.");
+=======
+// find 부분
+
+let lost_item_text = document.querySelector(".lost-item_text");
+console.log(lost_item_text);
+
+// lost-item_text enterkey event part
+function enterkey() {
+  // if (enterkey.lost_item_text == 13) {
+  // }
+  console.log(lost_item_text.textContent);
+>>>>>>> Stashed changes
 }
