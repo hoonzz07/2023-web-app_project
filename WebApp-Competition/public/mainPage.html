@@ -1,10 +1,10 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>웹앱경진대회</title>
-    <link rel="stylesheet" href="/css/mainPage.css" />
+    <link rel="stylesheet" href="../css/mainPage.css" />
     <script
       src="https://kit.fontawesome.com/23e68daf7b.js"
       crossorigin="anonymous"
@@ -17,7 +17,7 @@
         <div class="header_flex">
           <!-- 로고 -->
           <div class="logo">
-            <a href="mainPage.html"><img src="../img/logo.png " class="foundit" ></a>
+            <a href="mainPage.html"><img src="../img/logo.png" class="foundit" /></a>
           </div>
           <!-- 네비게이션 -->
           <nav class="gnb">
@@ -50,7 +50,7 @@
             </div>
             <div class="nav">
               <div class="leftbarno"></div>
-              <a href="login.html" onclick="YouNeedLogin()">
+              <a href="login.html" onclick="reqLoginHandler()">
                 <div class="section">
                   <i class="fa-solid fa-id-card"></i>
                   <p class="font">내 정보</p>
@@ -94,7 +94,7 @@
           <div class="slidecontainer">
             <div class="slide">
               <div class="slide1">
-                <a href="./findPStn.html"><img src="../img/lost.png" alt="img1" /></a>
+                <a href="findPStn.html"><img src="../img/lost.png" alt="img1" /></a>
                 <div class="explain">
                   <h2>분실물 찾기</h2>
                   <p>
@@ -116,7 +116,7 @@
                 </div>
               </div>
               <div class="slide3">
-                <a href="login.html" onclick="YouNeedLogin()">
+                <a href="login.html" onclick="reqLoginHandler()">
                   <img src="../img/fc16eff6cd8c7ff12538799b8bd8f82e.jpg" alt="img3" style="width: 450px; height: 450px; position: relative; top: -10px;"/>
                 </a>
                 <div class="explain">
@@ -149,37 +149,37 @@
           <div class="itemcontainer">
             <div class="todaysitem">
               <a href="#">
-                <img src="#">
+                <img src="../images/wallet.jpg">
                 <div class="objexp">
-                  <p class="objname">Lorem, ipsum dolor.</p>
-                  <p class="objsubti">Lorem ipsum dolor sit amet.</p>
+                  <p class="objname">지갑</p>
+                  <p class="objsubti">녹사평역 4번출구 앞</p>
                 </div>
               </a>
             </div>
             <div class="todaysitem">
               <a href="#">
-                <img src="#">
+                <img src="../images/0kn8lAhOvWQr-ehOoHSkbw2HsBEjCrhMQL2zXXtgCa2UBUXwgw5P1WT_J2fZrABcgeGyLoEKix9NYDW9MxXRCg.webp">
                 <div class="objexp">
-                  <p class="objname">Lorem, ipsum dolor.</p>
-                  <p class="objsubti">Lorem ipsum dolor sit amet.</p>
+                  <p class="objname">에어팟 프로2</p>
+                  <p class="objsubti">보라매공원 놀이터</p>
                 </div>
               </a>
             </div>
             <div class="todaysitem">
               <a href="#">
-                <img src="#">
+                <img src="../images/Nike.jpg">
                 <div class="objexp">
-                  <p class="objname">Lorem, ipsum dolor.</p>
-                  <p class="objsubti">Lorem ipsum dolor sit amet.</p>
+                  <p class="objname">나이키 백팩</p>
+                  <p class="objsubti">500번 버스</p>
                 </div>
               </a>
             </div>
             <div class="todaysitem">
               <a href="#">
-                <img src="#">
+                <img src="../images/img.png">
                 <div class="objexp">
-                  <p class="objname">Lorem, ipsum dolor.</p>
-                  <p class="objsubti">Lorem ipsum dolor sit amet.</p>
+                  <p class="objname">호텔 카드키</p>
+                  <p class="objsubti">명동성당 근처</p>
                 </div>
               </a>
             </div>
@@ -187,6 +187,6 @@
         </div>
       </div>
     </div>
-    <script src="../mainPage.js"></script>
+    <script src="mainPage.js"></script>
   </body>
 </html>
