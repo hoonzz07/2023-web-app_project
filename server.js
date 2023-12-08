@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname, "WebApp-Competition", "img")));
 
 app.get("/", (req, res) => {
   res.sendFile(
-    path.join(__dirname, "WebApp-Competition", "public", "mainPage.html")
+    path.join(__dirname, "WebApp-Competition", "public", "loading.html")
   );
 });
 
