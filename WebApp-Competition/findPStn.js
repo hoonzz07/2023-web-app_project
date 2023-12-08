@@ -16,6 +16,7 @@ const whatisdate = () => {
   let hours = today.getHours();
 
   // month = month + 1;
+  // let hours = today.getHours();
 
   // document.write(year + "-" + month + "-" + date)
   let showToday = document.querySelector(".todaysdate");
@@ -27,4 +28,14 @@ whatisdate();
 
 const YouNeedLogin = () => {
   alert("로그인이 필요합니다.");
+  // find 부분
+};
+let lost_item_text = document.querySelector(".lost-item_text");
+console.log(lost_item_text);
+
+// lost-item_text enterkey event part
+function enterkey() {
+  // if (enterkey.lost_item_text == 13) {
+  // }
+  console.log(lost_item_text.textContent);
 }
