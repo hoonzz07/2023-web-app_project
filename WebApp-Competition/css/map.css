@@ -54,11 +54,11 @@ header {
   flex-direction: column;
 }
 
-.nav>a {
+.nav > a {
   width: 70%;
 }
 
-.gnb>.nav>a>div {
+.gnb > .nav > a > div {
   width: 100%;
   height: 50px;
   display: flex;
@@ -68,7 +68,7 @@ header {
   /* border: 1px solid black; */
 }
 
-.gnb>.nav>a>div>i {
+.gnb > .nav > a > div > i {
   /* scale: 120%; */
   margin-left: 40px;
 }
@@ -101,7 +101,7 @@ header {
   color: white;
 }
 
-.section>.leftbar {
+.section > .leftbar {
   display: none;
 }
 
