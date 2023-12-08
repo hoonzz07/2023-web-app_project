@@ -35,13 +35,6 @@ let options = {
   level: 5,
 };
 
-// navigator.geolocation.getCurrentPosition((position) => {
-//   options = {
-//     center: new kakao.maps.LatLng(position),
-//     level: 3,
-//   };
-// });
-
 navigator.geolocation.getCurrentPosition((position) => {
   let lat = position.coords.latitude,
     lon = position.coords.longitude;
