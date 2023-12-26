@@ -5,6 +5,7 @@
   box-sizing: border-box;
   color: inherit;
   list-style: none;
+  font-family: 'Oswald', sans-serif;
 }
 
 /* 초기 레이아웃 잡기 */
@@ -333,22 +334,20 @@ header {
   width: 100%;
   height: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .todaysitem {
   /* border: 1px solid black; */
   /* background-color: yellow; */
-  width: 20%;
+  width: 18%;
   height: 100%;
   background-color: white;
   border-radius: 10px;
 }
 
-.todaysitem:hover {
-  /* background-color: rgb(99, 146, 233); */
-  scale: 105%;
-  /* background-color: blue; */
+.todaysitem:hover img{
+  scale: 115%;
   transition: all 0.15s;
 }
 
@@ -365,10 +364,18 @@ header {
   justify-content: space-around;
 }
 
-.todaysitem > a > img {
+.imgcontainer {
+  overflow: hidden;
   width: 150px;
   height: 150px;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
+  border-radius: 5px;
+}
+
+.imgcontainer img {
+  width: 150px;
+  height: 150px;
+  /* border: 1px solid gray; */
   border-radius: 5px;
 }
 
@@ -387,4 +394,32 @@ header {
 .objsubti {
   color: gray;
   font-size: 14px;
+}
+
+@media screen and (max-width: 1024px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  header {
+    width: 100%;
+    height: 20%;
+  }
+
+  .header_flex {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .gnb {
+    flex-direction: row;
+    /* margin-left: 200px; */
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .leftbar {
+    display: none;
+  }
 }

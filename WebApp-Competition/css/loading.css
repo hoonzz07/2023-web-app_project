@@ -96,13 +96,25 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1024px) {
   .write {
-    font-size: 48px;
+    font-size: 60px;
     word-break: keep-all;
   }
 
   .start {
-    margin-top: 550px;
+    margin-top: 600px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .write {
+      font-size: 48px;
+      word-break: keep-all;
+      margin-bottom: 300px;
+  }
+
+  .start {
+      margin-top: 650px;
   }
 }
