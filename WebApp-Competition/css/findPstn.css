@@ -138,8 +138,9 @@ header {
   background-color: rgb(226, 226, 226);
   border-radius: 10px;
   align-items: center;
+  justify-content: space-evenly;
   display: flex;
-  padding-left: 15px;
+  /* padding-left: 15px; */
 }
 
 .search>i {
@@ -148,14 +149,15 @@ header {
 }
 
 /* 검색 input */
-.searchtogo {
-  margin-left: 30px;
+#searchtogo {
+  margin-left: 0px;
   border: none;
   padding: 10px;
   background-color: inherit;
   overflow: scroll;
   width: 80%;
   font-size: 20px;
+
 }
 
 /* 캘린더 날짜는 나중에 시간 되면 자바스크립트로 오늘 날짜 가져올 예정 */
@@ -352,4 +354,14 @@ header {
   font-size: 20px;
   border: none;
   /* border-right: 1px solid rgba(217, 217, 217, 0.619); */
+}
+
+#searchWordBtn {
+  background-color: black;
+  width: 54px;
+  height: 32px;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  font-weight: bold;
 }

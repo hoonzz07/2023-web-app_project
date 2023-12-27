@@ -45,12 +45,15 @@ function enterkey() {
 const db = fetch(`http://localhost:8001/list?search=${search ? search : ""}`)
   .then((response) => response.json())
   .then((data) => {
-    console.log(data);
     for (let a of data) {
       const li = document.createElement("li");
       const div = document.createElement("div");
       div.innerText = `${a[0]} / ${a[1]}`;
       div.className = "lostItems";
+      li.value = a[1];
+      li.addEventListener("click", () => {
+        location.href = `${location.origin}/map.html?place=${a[1]}`;
+      });
       li.appendChild(div);
       lost.appendChild(li);
     }
@@ -73,7 +76,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function searchEvent() {
-  let search = document.getElementById("searchtogo").value;
-  urlParams.set("search", search);
-  window.location.search = urlParams;
+  if (window.event.keyCode == 13 || event.type == "click") {
+    let search = document.getElementById("searchtogo").value;
+    urlParams.set("search", search);
+    window.location.search = urlParams;
+  }
 }

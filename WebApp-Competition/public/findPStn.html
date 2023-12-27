@@ -66,8 +66,13 @@
             <!-- 검색창 -->
             <div class="search">
               <i class="fa-solid fa-magnifying-glass"></i>
-              <input type="text" id="searchtogo" placeholder="검색" />
-              <button onclick="searchEvent()">검색</button>
+              <input
+                type="text"
+                id="searchtogo"
+                onkeyup="searchEvent()"
+                placeholder="검색"
+              />
+              <button id="searchWordBtn" onclick="searchEvent()">검색</button>
             </div>
             <!-- 날짜 -->
             <div class="calendar">
