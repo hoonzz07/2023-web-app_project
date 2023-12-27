@@ -1,4 +1,7 @@
 const lost = document.querySelector("#lost-item ul");
+const urlParams = new URLSearchParams(window.location.search);
+const search = urlParams.get("search");
+document.getElementById("searchtogo").value = search;
 
 const whatisdate = () => {
   let today = new Date();
@@ -20,6 +23,11 @@ const whatisdate = () => {
 };
 whatisdate();
 
+const register = document.querySelector(".res_button");
+register.addEventListener("click", function () {
+  alert("현재는 등록하실 수 없습니다. 죄송합니다.");
+});
+
 const YouNeedLogin = () => {
   alert("로그인이 필요합니다.");
   // find 부분
@@ -34,7 +42,7 @@ function enterkey() {
   console.log(lost_item_text.textContent);
 }
 
-const db = fetch("http://localhost:8001/list")
+const db = fetch(`http://localhost:8001/list?search=${search ? search : ""}`)
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
@@ -49,23 +57,23 @@ const db = fetch("http://localhost:8001/list")
   })
   .catch((error) => console.error("Error:", error));
 
-  const register = document.querySelector('.res_button')
-  register.addEventListener('click', function(){
-    alert('현재는 등록하실 수 없습니다. 죄송합니다.')
-  })
+document.addEventListener("DOMContentLoaded", function () {
+  const itemsList = document.querySelector("#lost-item > ul");
+  const howManyItems = document.querySelector(".howmany > h3 > strong");
 
-  document.addEventListener('DOMContentLoaded', function () {
-    const itemsList = document.querySelector('#lost-item > ul');
-    const howManyItems = document.querySelector('.howmany > h3 > strong');
-  
-    function updateHowManyItems() {
-      const itemListItems = itemsList.querySelectorAll('li');
-      howManyItems.textContent = itemListItems.length.toString();
-    }
-  
-    updateHowManyItems();
-  
-    itemsList.addEventListener('DOMNodeInserted', updateHowManyItems);
-    itemsList.addEventListener('DOMNodeRemoved', updateHowManyItems);
-  });
-  
+  function updateHowManyItems() {
+    const itemListItems = itemsList.querySelectorAll("li");
+    howManyItems.textContent = itemListItems.length.toString();
+  }
+
+  updateHowManyItems();
+
+  itemsList.addEventListener("DOMNodeInserted", updateHowManyItems);
+  itemsList.addEventListener("DOMNodeRemoved", updateHowManyItems);
+});
+
+function searchEvent() {
+  let search = document.getElementById("searchtogo").value;
+  urlParams.set("search", search);
+  window.location.search = urlParams;
+}
