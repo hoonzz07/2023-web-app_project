@@ -48,3 +48,9 @@ const db = fetch("http://localhost:8001/list")
     }
   })
   .catch((error) => console.error("Error:", error));
+
+  const register = document.querySelector('.res_button')
+
+  register.addEventListener('click', function(){
+    alert('현재는 등록하실 수 없습니다. 죄송합니다.')
+  })
