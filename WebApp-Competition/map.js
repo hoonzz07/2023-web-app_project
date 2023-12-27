@@ -92,3 +92,10 @@ function searchPlace() {
     window.location.search = urlParams;
   }
 }
+
+const profile = document.querySelector(".profilebox > i");
+
+profile.addEventListener("click", function () {
+  alert("로그인이 필요합니다.");
+  // window.location.href = "./public/login.html";
+});
