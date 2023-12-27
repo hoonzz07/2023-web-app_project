@@ -230,7 +230,7 @@ header {
   justify-content: center;
   flex-direction: column;
   width: 90%;
-  height: 75%;
+  height: 70%;
   overflow-y: scroll;
 }
 
@@ -255,6 +255,12 @@ header {
   width: 100%;
   cursor: pointer;
   padding: 10px 15px;
+}
+
+.howmany {
+  width: 90%;
+  display: flex;
+  justify-content: end;
 }
 
 .lostItems:hover {

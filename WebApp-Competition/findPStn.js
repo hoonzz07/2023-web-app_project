@@ -50,7 +50,22 @@ const db = fetch("http://localhost:8001/list")
   .catch((error) => console.error("Error:", error));
 
   const register = document.querySelector('.res_button')
-
   register.addEventListener('click', function(){
     alert('현재는 등록하실 수 없습니다. 죄송합니다.')
   })
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const itemsList = document.querySelector('#lost-item > ul');
+    const howManyItems = document.querySelector('.howmany > h3 > strong');
+  
+    function updateHowManyItems() {
+      const itemListItems = itemsList.querySelectorAll('li');
+      howManyItems.textContent = itemListItems.length.toString();
+    }
+  
+    updateHowManyItems();
+  
+    itemsList.addEventListener('DOMNodeInserted', updateHowManyItems);
+    itemsList.addEventListener('DOMNodeRemoved', updateHowManyItems);
+  });
+  
