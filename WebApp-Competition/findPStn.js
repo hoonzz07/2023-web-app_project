@@ -1,10 +1,4 @@
-// const btn = document.querySelector('button')
-
-// const btnClickHandler = () => {
-//     alert('You just clicked the button')
-// }
-
-// btn.onclick = btnClickHandler
+const lost = document.querySelector("#lost-item ul");
 
 const whatisdate = () => {
   let today = new Date();
@@ -39,3 +33,18 @@ function enterkey() {
   // }
   console.log(lost_item_text.textContent);
 }
+
+const db = fetch("http://localhost:8001/list")
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
+    for (let a of data) {
+      const li = document.createElement("li");
+      const div = document.createElement("div");
+      div.innerText = `${a[0]} / ${a[1]}`;
+      div.className = "lostItems";
+      li.appendChild(div);
+      lost.appendChild(li);
+    }
+  })
+  .catch((error) => console.error("Error:", error));
